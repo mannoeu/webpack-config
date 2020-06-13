@@ -2,7 +2,7 @@ import React from "react";
 
 const App = React.createClass({
   render: function () {
-    return React.createElement("h1", null, "Meu componente");
+    return <h1>Meu Componente</h1>;
   },
 });
 
