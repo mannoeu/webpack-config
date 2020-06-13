@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -44,7 +44,14 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	console.log("A");
+	import React from "react";
+	import ReactDOM from "react-dom";
+	import App from "./app";
+
+	ReactDOM.render(
+	  React.createElement(App),
+	  document.querySelector('[data-js="app"]')
+	);
 
 
 /***/ })
